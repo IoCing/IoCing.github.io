@@ -4,17 +4,22 @@
   <meta charset="utf-8">
   
   
-  <title>IoCing</title>
+  <title>raft源码阅读 | IoCing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="和赖赖快乐开心每一天🌼">
-<meta property="og:type" content="website">
-<meta property="og:title" content="IoCing">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="etcd raft源码阅读[TOC]  先梳理一下整体的包结构 主目录代码中有多个package，每个主要的raft的逻辑实现在raft package中，其他的package主要是为raft提供支持，例如选举，状态追踪，还有原型photo buffer的定义等等。 然后梳理一下上层应用层和底层raft的一些调用关系 底层raft使用Node接口为上层提供了可以调用的方法，其他的实现细节都隐藏，应">
+<meta property="og:type" content="article">
+<meta property="og:title" content="raft源码阅读">
+<meta property="og:url" content="http://example.com/2022/06/06/raft%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/index.html">
 <meta property="og:site_name" content="IoCing">
-<meta property="og:description" content="和赖赖快乐开心每一天🌼">
+<meta property="og:description" content="etcd raft源码阅读[TOC]  先梳理一下整体的包结构 主目录代码中有多个package，每个主要的raft的逻辑实现在raft package中，其他的package主要是为raft提供支持，例如选举，状态追踪，还有原型photo buffer的定义等等。 然后梳理一下上层应用层和底层raft的一些调用关系 底层raft使用Node接口为上层提供了可以调用的方法，其他的实现细节都隐藏，应">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://iocing-image.oss-cn-shenzhen.aliyuncs.com/img/config.png">
+<meta property="og:image" content="https://iocing-image.oss-cn-shenzhen.aliyuncs.com/img/state.png">
+<meta property="article:published_time" content="2022-06-06T09:10:06.000Z">
+<meta property="article:modified_time" content="2022-06-06T12:27:08.303Z">
 <meta property="article:author" content="王晓鹏">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://iocing-image.oss-cn-shenzhen.aliyuncs.com/img/config.png">
   
     <link rel="alternate" href="/atom.xml" title="IoCing" type="application/atom+xml">
   
@@ -75,9 +80,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="etcd-raft源码阅读" class="h-entry article article-type-etcd" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="etcd-raft源码阅读" class="h-entry article article-type-etcd" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/06/06/raft%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" class="article-date">
   <time class="dt-published" datetime="2022-06-06T09:10:06.000Z" itemprop="datePublished">2022-06-06</time>
@@ -90,8 +93,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/06/06/raft%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/">raft源码阅读</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      raft源码阅读
     </h1>
   
 
@@ -964,11 +967,9 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
   
+</article>
 
 
 </section>
