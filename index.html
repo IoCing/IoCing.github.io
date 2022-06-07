@@ -1,1292 +1,445 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
-
-  <meta name="description" content="和赖赖快乐开心每一天🌼">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/i3.png">
+  <link rel="icon" href="/img/i3.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="IoCing">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="和赖赖快乐开心每一天🌼">
 <meta property="og:type" content="website">
 <meta property="og:title" content="IoCing">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="IoCing">
 <meta property="og:description" content="和赖赖快乐开心每一天🌼">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="IoCing">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
-
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
   <title>IoCing</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
   
 
 
 
 
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.1","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
 
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+<body>
+  
 
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
+  <header>
+    
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">IoCing</h1>
-      <span class="logo-line-after"><i></i></span>
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>IoCing</strong>
     </a>
-      <p class="site-subtitle" itemprop="description">分享是最好的记录</p>
-  </div>
 
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
     </div>
   </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
-      </li>
-  </ul>
 </nav>
 
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
-    </header>
-
-    
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
   
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/06/06/raft%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/head.jpeg">
-      <meta itemprop="name" content="IoCing">
-      <meta itemprop="description" content="和赖赖快乐开心每一天🌼">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="IoCing">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/tianchi.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-            <a href="/2022/06/06/raft%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" class="post-title-link" itemprop="url">raft源码阅读</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-06-06 17:10:06 / Modified: 21:27:00" itemprop="dateCreated datePublished" datetime="2022-06-06T17:10:06+08:00">2022-06-06</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>17k</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>15 mins.</span>
-            </span>
-
+            <span id="subtitle" data-typed-text="这是一个安静的博客"></span>
+          
         </div>
-      </header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+        
+      </div>
 
       
-          <h1 id="etcd-raft源码阅读"><a href="#etcd-raft源码阅读" class="headerlink" title="etcd raft源码阅读"></a>etcd raft源码阅读</h1><p>[TOC]</p>
-<blockquote>
-<p><strong>先梳理一下整体的包结构</strong></p>
-<p>主目录代码中有多个package，每个主要的raft的逻辑实现在raft package中，其他的package主要是为raft提供支持，例如选举，状态追踪，还有原型photo buffer的定义等等。</p>
-<p><strong>然后梳理一下上层应用层和底层raft的一些调用关系</strong></p>
-<p>底层raft使用Node接口为上层提供了可以调用的方法，其他的实现细节都隐藏，应用层和raft层都要通过几个channel来收发Msg，具体的channel 以及消息的类型和处理之后再深入。</p>
-</blockquote>
-<h1 id="raft-package"><a href="#raft-package" class="headerlink" title="raft package"></a>raft package</h1><p>先来列一下raftpackage中的一些主要的结构体以及对应的方法</p>
-<p>还自顶往下看吧，这样的话好展开也好理解整体的框架，现在不讨论应用层的实现，只关注raft底层以及在中间用于通信转接的node。rawNode是对raft的封装。node是Node接口的实现，node里面包含了一个rawNode的实例，借此来操作raft底层的各种函数。</p>
-<h3 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h3><table>
-<thead>
-<tr>
-<th>Node方法</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Tick</td>
-<td>这个是用来触发heartbeat以及election的函数，每次都会调用下层raft的tick函数来对electionElapsed和heartbeatElapsed进行更新，如果判断超时的话就做相应的处理</td>
-</tr>
-<tr>
-<td>Campaign</td>
-<td>让Node 转变为candidate并且开始一次选举</td>
-</tr>
-<tr>
-<td>Propose</td>
-<td>用来提交需要写到log中的数据，提交是有可能失败的，需要user来确定propose的返回</td>
-</tr>
-<tr>
-<td>ProposeConfChange</td>
-<td>用来提交一个配置更改</td>
-</tr>
-<tr>
-<td>Step</td>
-<td>Step 使用给定的消息推进状态机，不同的raft状态对应不同的step处理</td>
-</tr>
-<tr>
-<td>Ready</td>
-<td>返回一个通道，这个通道会返回当前一个点的状态。Node的user在收到ready数据并且进行处理以后，需要调用advance。只有前面ready的snap，entries都applied了，才能提交之后ready中的entries</td>
-</tr>
-<tr>
-<td>Advance</td>
-<td>advance是给application 层用来通知raft，上层已经处理了最后一个ready的数据，底层raft就可以了对ready中的状态进行处理，也让node开始准备传输下一次ready</td>
-</tr>
-<tr>
-<td>ApplyConfChange</td>
-<td>提交一个conf的变更</td>
-</tr>
-<tr>
-<td>TransferLeadership</td>
-<td>TransferLeadership 尝试将领导权转移给给定的受让人。</td>
-</tr>
-<tr>
-<td>ReadIndex</td>
-<td>用来请求一个read state。这个read state会在ready中设置，read state有一个read index。只有在应用层advance的index比这个read index更大时再能安全的读，这样的话就可以保证linearizable read。</td>
-</tr>
-<tr>
-<td>Status</td>
-<td>Status returns the current status of the raft state machine</td>
-</tr>
-<tr>
-<td>ReportUnreachable</td>
-<td>用来向raft报告某一个节点现在是unreachable</td>
-</tr>
-<tr>
-<td>ReportSnapshot</td>
-<td>用来向leader报告某一个follower对snap处理的结果</td>
-</tr>
-<tr>
-<td>Stop</td>
-<td>Stop performs any necessary termination of the Node.</td>
-</tr>
-</tbody></table>
-<p>在应用层调用Node，主要关注ready的处理，以及调用advance，还要定时调用Tick，这个是Node user的职责。</p>
-<p>关于Node接口的使用可以在etcd提供的raftexampl中学习一下，这是一个简单的kvserver，使用raft做底层状态机。</p>
-<h3 id="config"><a href="#config" class="headerlink" title="config"></a>config</h3><p><img src="https://iocing-image.oss-cn-shenzhen.aliyuncs.com/img/config.png"></p>
-<p>在config结构体中主要包含了一些对raft初始化的配置信息，例如选举心跳的间隔，存储引擎等等，下面列出他的各种变量。</p>
-<table>
-<thead>
-<tr>
-<th>cinfig变量</th>
-<th>类型</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>ID</td>
-<td>uint64</td>
-<td>server 的ID 身份标识</td>
-</tr>
-<tr>
-<td>ElectionTick</td>
-<td>int</td>
-<td>节点选举的间隔</td>
-</tr>
-<tr>
-<td>HeartbeatTick</td>
-<td>Int</td>
-<td>节点发送心跳的间隔</td>
-</tr>
-<tr>
-<td>Storage</td>
-<td>Storage</td>
-<td>为raft提供存储服务的实例</td>
-</tr>
-<tr>
-<td>Applied</td>
-<td>uint64</td>
-<td>最后一个已提交的entry的index</td>
-</tr>
-<tr>
-<td>MaxSizePerMsg</td>
-<td>uint64</td>
-<td>对append message的大小限制</td>
-</tr>
-<tr>
-<td>MaxCommittedSizePerReady</td>
-<td>uint64</td>
-<td>对一个ready中可以提交的entry的大小限制</td>
-</tr>
-<tr>
-<td>MaxUncommittedEntriesSize</td>
-<td>uint64</td>
-<td>对未提交的entry的大小限制，主要是针对leader的log</td>
-</tr>
-<tr>
-<td>MaxInflightMsgs</td>
-<td>int</td>
-<td>MaxInflightMsgs limits the max number of in-flight append messages during optimistic replication phase.</td>
-</tr>
-<tr>
-<td>CheckQuorum</td>
-<td>bool</td>
-<td>标志leader是否需要进行check quorum操作</td>
-</tr>
-<tr>
-<td>PreVote</td>
-<td>bool</td>
-<td>应该是是否开启PreVote</td>
-</tr>
-<tr>
-<td>ReadOnlyOption</td>
-<td>ReadOnlyOption</td>
-<td>标志readonly如何进行</td>
-</tr>
-<tr>
-<td>Logger</td>
-<td>Logger</td>
-<td>给每个raft的logger</td>
-</tr>
-<tr>
-<td>DisableProposalForwarding</td>
-<td>bool</td>
-<td>这个标志为true的话，follower会丢掉来自leader的提交</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>cinfig方法</th>
-<th>参数</th>
-<th>返回类型</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>validate()</td>
-<td>无</td>
-<td>error</td>
-<td>验证参数的有效性</td>
-</tr>
-</tbody></table>
-<p>上层可以调用newRaft函数，传入一个Config来对raft进行初始化。</p>
-<h3 id="raft"><a href="#raft" class="headerlink" title="raft"></a>raft</h3><p>raft struct是Raft实现中最核心的结构，负责leader election，log replicate，以及server各种状态的变换等逻辑的实现，可以说一个raft实例就是一个状态机。这个在论文中有一张图展示了状态各种变化的条件。</p>
-<p>这个读过论文的都会比较熟悉。</p>
-<p>下面列一下raft中的各种变量和方法来对raft更深入理解</p>
-<table>
-<thead>
-<tr>
-<th>raft变量</th>
-<th>类型</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>id</td>
-<td>unit64</td>
-<td>raft的编号</td>
-</tr>
-<tr>
-<td>Term</td>
-<td>Uint64</td>
-<td>term number</td>
-</tr>
-<tr>
-<td>Vote</td>
-<td>Unit64</td>
-<td>记录vote for的server</td>
-</tr>
-<tr>
-<td>readStates</td>
-<td>ReadState</td>
-<td>ReadState provides state for read only query</td>
-</tr>
-<tr>
-<td>raftLog</td>
-<td>*raftLog</td>
-<td>对log的记录，也会记录commited，last apllied</td>
-</tr>
-<tr>
-<td>maxMsgSize</td>
-<td>uint64</td>
-<td>同config中的maxMsgSize</td>
-</tr>
-<tr>
-<td>maxUncommittedSize</td>
-<td>uint64</td>
-<td>同config中的maxUncommittedSize</td>
-</tr>
-<tr>
-<td>prs</td>
-<td>tracker.ProgressTracker</td>
-<td>这个用来记录其他server在leader眼中的状态，记录next，match信息</td>
-</tr>
-<tr>
-<td>state</td>
-<td>StateType</td>
-<td>当前的状态follower，leader，candidate</td>
-</tr>
-<tr>
-<td>isLearner</td>
-<td>bool</td>
-<td>标记是否为leader</td>
-</tr>
-<tr>
-<td>msgs</td>
-<td>[]pb.Message</td>
-<td>用来存放要发送的消息，通过ready统一处理</td>
-</tr>
-<tr>
-<td>lead</td>
-<td>Unit64</td>
-<td>the leader id</td>
-</tr>
-<tr>
-<td>leadTransferee</td>
-<td>uint64</td>
-<td>leadTransferee is id of the leader transfer target when its value is not zero.Follow the procedure defined in raft thesis 3.10.</td>
-</tr>
-<tr>
-<td>pendingConfIndex</td>
-<td>uint64</td>
-<td>在配置变更时，用来判断是否允许。Only one conf change may be pending (in the log, but not yet applied) at a time. This is enforced via pendingConfIndex, which  is set to a value &gt;&#x3D; the log index of the latest pending configuration change (if any). Config changes are only allowed to be proposed if the leader’s applied index is greater than this value.</td>
-</tr>
-<tr>
-<td>uncommittedSize</td>
-<td>uint64</td>
-<td>同config</td>
-</tr>
-<tr>
-<td>readOnly</td>
-<td>*readOnly</td>
-<td>用来处理read only的结构体</td>
-</tr>
-<tr>
-<td>electionElapsed</td>
-<td>int</td>
-<td>记录上次有效消息到现在的时间，判断一个raft是否要开始选举</td>
-</tr>
-<tr>
-<td>heartbeatElapsed</td>
-<td>int</td>
-<td>记录上次收到心跳heartbeatTimeout到现在的时间，只有leader在意这个参数</td>
-</tr>
-<tr>
-<td>checkQuorum</td>
-<td>bool</td>
-<td>同config</td>
-</tr>
-<tr>
-<td>preVote</td>
-<td>bool</td>
-<td>同config</td>
-</tr>
-<tr>
-<td>heartbeatTimeout</td>
-<td>int</td>
-<td>心跳超时间隔</td>
-</tr>
-<tr>
-<td>electionTimeout</td>
-<td>int</td>
-<td>选举超时间隔</td>
-</tr>
-<tr>
-<td>randomizedElectionTimeout</td>
-<td>int</td>
-<td>randomizedElectionTimeout is a random number between  [electiontimeout, 2 * electiontimeout - 1]. It gets reset when raft changes its state to follower or candidate</td>
-</tr>
-<tr>
-<td>disableProposalForwarding</td>
-<td>bool</td>
-<td>同config</td>
-</tr>
-<tr>
-<td>tick</td>
-<td>func()</td>
-<td>为raft指定的tick函数，控制心跳和选举</td>
-</tr>
-<tr>
-<td>step</td>
-<td>stepFunc 也是一个函数类型</td>
-<td>用来处理各种信息的函数，不同的状态收到不同的信息对应不同的处理</td>
-</tr>
-<tr>
-<td>logger</td>
-<td>Logger</td>
-<td>日志</td>
-</tr>
-<tr>
-<td>pendingReadIndexMessages</td>
-<td>[]pb.Message</td>
-<td>用来存放还不能做回复的readindex消息，因为这个index现在的raft还没有commited</td>
-</tr>
-</tbody></table>
-<h3 id="raft-softstate"><a href="#raft-softstate" class="headerlink" title="raft softstate"></a>raft softstate</h3><h3 id="raft-hardstate"><a href="#raft-hardstate" class="headerlink" title="raft hardstate"></a>raft hardstate</h3><h3 id="raft-process-state"><a href="#raft-process-state" class="headerlink" title="raft process state"></a>raft process state</h3><h3 id="raftlog"><a href="#raftlog" class="headerlink" title="raftlog"></a>raftlog</h3><p>上面列出了raft包含的所有变量，下面来研究一下raft的方法，这些方法都是提供给Node中的方法做的底层的实现，我现在开始研究一下他们的细节。</p>
-<h3 id="raft-tick处理"><a href="#raft-tick处理" class="headerlink" title="raft tick处理"></a>raft tick处理</h3><p>关于tick的处理有两种</p>
-<table>
-<thead>
-<tr>
-<th>raft tick方法</th>
-<th>作用</th>
-<th>实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>tickElection</td>
-<td>tickElection is run by followers and candidates after r.electionTimeout.</td>
-<td>先将electionElapsed加一，如果自己当前状态可以做leader，并且选举超时，那么就发起一次选举</td>
-</tr>
-<tr>
-<td>tickHeartbeat</td>
-<td>tickHeartbeat is run by leaders to send a MsgBeat after r.heartbeatTimeout.</td>
-<td>这是leader用来处理上层调用tick的方法，更新electionElapsed，如果心跳超时就广播发送心跳消息</td>
-</tr>
-</tbody></table>
-<p>raft中的electionElapsed，heartbeatElapsed就是用来记录间隔的，上层定时调用tick，每次调用都给这两个变量加一。直到超时后就将这俩个变量重制为0.</p>
-<h3 id="raft各种状态的转换"><a href="#raft各种状态的转换" class="headerlink" title="raft各种状态的转换"></a>raft各种状态的转换</h3><p><img src="https://iocing-image.oss-cn-shenzhen.aliyuncs.com/img/state.png" alt="状态转换"></p>
-<p>这些转换的时机如上图，只不过加了预选举的状态。</p>
-<table>
-<thead>
-<tr>
-<th>raft become方法</th>
-<th>作用</th>
-<th>实现</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>becomeFollower</td>
-<td>收到了有效的心跳，或者发现了更高term的leader修改当前状态为follower</td>
-<td></td>
-</tr>
-<tr>
-<td>becomeCandidate</td>
-<td>precandidate成功，修改当前状态为candidate</td>
-<td></td>
-</tr>
-<tr>
-<td>becomePreCandidate</td>
-<td>选举时间超时，开始一次选举，修改当前状态为precandidate</td>
-<td></td>
-</tr>
-<tr>
-<td>becomeLeader</td>
-<td>选举成功，修改当前状态为leader</td>
-<td></td>
-</tr>
-</tbody></table>
-<p>感觉precandidate相当于不增加term进行一次选举，看一看这个server是否有最update的log，能不能当选。如果可以的话再进行正式的选举，并且转换到candidate状态，给term+1</p>
-<p>这几个函数的实现中，只有becomeLeader的比较复杂一点，其他三个都是设置对应的step函数和tick函数，以及一些参数的设置，becomeCandidate需要将term增加。</p>
-<p>下面研究一下becomeLeader的细节，直接贴代码吧</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(r *raft)</span></span> becomeLeader() &#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//检查是否是不合法的状态转换</span></span><br><span class="line">   <span class="keyword">if</span> r.state == StateFollower &#123;</span><br><span class="line">      <span class="built_in">panic</span>(<span class="string">&quot;invalid transition [follower -&gt; leader]&quot;</span>)</span><br><span class="line">   &#125;</span><br><span class="line">  <span class="comment">//常规的参数设置</span></span><br><span class="line">   r.step = stepLeader</span><br><span class="line">   r.reset(r.Term)</span><br><span class="line">   r.tick = r.tickHeartbeat</span><br><span class="line">   r.lead = r.id</span><br><span class="line">   r.state = StateLeader</span><br><span class="line">	<span class="comment">//将自己在prs中的状态设置为replicate 这个是server在leader眼中的状态有，probe，replicate，snapshot三种，leader会根据server的状态采取不同的操作例如append log，传送snap等。</span></span><br><span class="line">   r.prs.Progress[r.id].BecomeReplicate()</span><br><span class="line">  <span class="comment">//这个pendingConfIndex的参数是在配置变换时会用到，等看到配置变换再深入</span></span><br><span class="line">   r.pendingConfIndex = r.raftLog.lastIndex()</span><br><span class="line"></span><br><span class="line">  <span class="comment">//这里是新建了一个空的entry，这是etcd raft的一个改进，因为raft设计的一个commited的限制是leader只能commited当前term的entry，所以在这里，当选leader的第一件事就是commited一个空的entry来commit leader和其他server中未commited的entry其他共识</span></span><br><span class="line">   emptyEnt := pb.Entry&#123;Data: <span class="literal">nil</span>&#125;</span><br><span class="line">  <span class="comment">//将这个空的entry填入log</span></span><br><span class="line">   <span class="keyword">if</span> !r.appendEntry(emptyEnt) &#123;</span><br><span class="line">      <span class="comment">// This won&#x27;t happen because we just called reset() above.</span></span><br><span class="line">      r.logger.Panic(<span class="string">&quot;empty entry was dropped&quot;</span>)</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="comment">// As a special case, don&#x27;t count the initial empty entry towards the</span></span><br><span class="line">   <span class="comment">// uncommitted log quota. This is because we want to preserve the</span></span><br><span class="line">   <span class="comment">// behavior of allowing one entry larger than quota if the current</span></span><br><span class="line">   <span class="comment">// usage is zero.</span></span><br><span class="line">  <span class="comment">//这里是减去空entry所占用的空间</span></span><br><span class="line">   r.reduceUncommittedSize([]pb.Entry&#123;emptyEnt&#125;)</span><br><span class="line">   r.logger.Infof(<span class="string">&quot;%x became leader at term %d&quot;</span>, r.id, r.Term)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="raft-状态机step函数处理"><a href="#raft-状态机step函数处理" class="headerlink" title="raft 状态机step函数处理"></a>raft 状态机step函数处理</h3><p>step函数是用来处理收到的消息的，不同状态要进行不同的处理</p>
-<p>首先是有一个Step函数，首字母大写，由tickElection和tickHeartbeat调用</p>
-<p>在Step函数中有对选举和投票的处理，可能这俩个过程对每个server都差不多吧，然后其他的msgtype的话会在Step的末尾调用raft.step()来进行处理，在不同的状态会设置为不同的step函数，有三种类型，分别是stepLeader，stepFollower，stepCandidate，其中在preCandidate和candidate这两种状态是共用一个stepcandidate函数。这个step在上面介绍的become函数中设置。</p>
-<p>step其实就是一个状态机的处理，他的输入是各种类型的msg。是比较复杂的。但是主要是根据消息类型的不同会有不同的处理，下面开始介绍各种消息类型。</p>
-<h3 id="message"><a href="#message" class="headerlink" title="message"></a>message</h3><p>在raft的论文中，设计了几种不同的消息类型来分别进行不同的操作，例如request vote ，log replicate 。在etcd里阿敏将所有的消息都放到了一个统一的message结构体，在其中设置了消息类型，每个操作只使用对应的参数，其他的参数为空，这个message在raft.pb.go中定义。下面是结构体的各种参数</p>
-<table>
-<thead>
-<tr>
-<th>message 变量</th>
-<th>类型</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Type</td>
-<td>MessageType</td>
-<td>消息类型</td>
-</tr>
-<tr>
-<td>To</td>
-<td>uint64</td>
-<td>消息发往server id</td>
-</tr>
-<tr>
-<td>From</td>
-<td>uint64</td>
-<td>发送msg的server id</td>
-</tr>
-<tr>
-<td>Term</td>
-<td>uint64</td>
-<td>发送时的current term</td>
-</tr>
-<tr>
-<td>LogTerm</td>
-<td>uint64</td>
-<td>论文中的PreLogTerm</td>
-</tr>
-<tr>
-<td>Index</td>
-<td>uint64</td>
-<td>论文中的PreIndex</td>
-</tr>
-<tr>
-<td>Entries</td>
-<td>[]Entry</td>
-<td>传输的需要append 的entries</td>
-</tr>
-<tr>
-<td>Commit</td>
-<td>uint64</td>
-<td>论文中的leadercommit</td>
-</tr>
-<tr>
-<td>Snapshot</td>
-<td>Snapshot</td>
-<td>传输的Snapshot数据</td>
-</tr>
-<tr>
-<td>Reject</td>
-<td>bool</td>
-<td>再消息处理返回时进行标志，例如拒绝投票</td>
-</tr>
-<tr>
-<td>RejectHint</td>
-<td>uint64</td>
-<td>拒绝同步日志请求时返回的当前节点日志ID，用于被拒绝方快速定位到下一次合适的同步日志位置，这歌就是用来快速更新next的</td>
-</tr>
-<tr>
-<td>Context</td>
-<td>[]byte</td>
-<td>上下文信息</td>
-</tr>
-</tbody></table>
-<h4 id="message-type"><a href="#message-type" class="headerlink" title="message type"></a>message type</h4><table>
-<thead>
-<tr>
-<th>message 类型</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>MsgHup            MessageType &#x3D; 0</td>
-<td>用于开启一次选举</td>
-</tr>
-<tr>
-<td>MsgBeat           MessageType &#x3D; 1</td>
-<td>用于开启一次心跳</td>
-</tr>
-<tr>
-<td>MsgProp           MessageType &#x3D; 2</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgApp            MessageType &#x3D; 3</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgAppResp        MessageType &#x3D; 4</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgVote           MessageType &#x3D; 5</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgVoteResp       MessageType &#x3D; 6</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgSnap           MessageType &#x3D; 7</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgHeartbeat      MessageType &#x3D; 8</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgHeartbeatResp  MessageType &#x3D; 9</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgUnreachable    MessageType &#x3D; 10</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgSnapStatus     MessageType &#x3D; 11</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgCheckQuorum    MessageType &#x3D; 12</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgTransferLeader MessageType &#x3D; 13</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgTimeoutNow     MessageType &#x3D; 14</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgReadIndex      MessageType &#x3D; 15</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgReadIndexResp  MessageType &#x3D; 16</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgPreVote        MessageType &#x3D; 17</td>
-<td></td>
-</tr>
-<tr>
-<td>MsgPreVoteResp    MessageType &#x3D; 18</td>
-<td></td>
-</tr>
-</tbody></table>
-<p>这些消息类型都会在step函数中进行处理，不同的消息类型会使用message中不同的参数。</p>
-<p>我现在列一下各种在step中处理的消息类型，然后介绍一下不同状态的server的不同处理</p>
-<h4 id="MsgHup"><a href="#MsgHup" class="headerlink" title="MsgHup"></a>MsgHup</h4><table>
-<thead>
-<tr>
-<th>使用的参数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>From</td>
-<td>表示信息发送者</td>
-</tr>
-</tbody></table>
-<p>这个消息就是一个raft在收到election超时的消息以后，通过一条MsgHup来触发一次选举，使用Step来处理MsgHup</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Step 函数部分截取</span></span><br><span class="line"><span class="keyword">case</span> pb.MsgHup: <span class="comment">//这里开始选举</span></span><br><span class="line">   <span class="keyword">if</span> r.preVote &#123; <span class="comment">//根据是否是选举或者预选，在hup函数调用时传送不同的参数</span></span><br><span class="line">      r.hup(campaignPreElection)</span><br><span class="line">   &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      r.hup(campaignElection)</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="MsgBeat"><a href="#MsgBeat" class="headerlink" title="MsgBeat"></a>MsgBeat</h4><table>
-<thead>
-<tr>
-<th>使用的参数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>From</td>
-<td>表示信息发送者</td>
-</tr>
-</tbody></table>
-<p>MsgBeat消息是在tickheart发现心跳时间超时以后用来进行一轮心跳发送的，他给Step传输一个MsgBeat消息，在Step中会把这个消息交给stepLeader来处理</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//stepLeader 函数部分截取</span></span><br><span class="line"><span class="keyword">case</span> pb.MsgBeat:</span><br><span class="line">   r.bcastHeartbeat()<span class="comment">//开启一轮心跳的广播</span></span><br><span class="line">   <span class="keyword">return</span> <span class="literal">nil</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="MsgProp"><a href="#MsgProp" class="headerlink" title="MsgProp"></a>MsgProp</h4><table>
-<thead>
-<tr>
-<th>使用的参数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>From</td>
-<td>表示信息发送者</td>
-</tr>
-<tr>
-<td>to</td>
-<td>信息要发送的目的id</td>
-</tr>
-<tr>
-<td>Entries</td>
-<td>要propose的数据</td>
-</tr>
-</tbody></table>
-<p>上层要propose的数据就会包装到这个消息中传输到下层，对这个的处理对不同的raft状态有所不同。</p>
-<p>在follower收到MsgProp的时候，他们会把这个消息转发给leader。candidate收到的话会直接丢弃，因为他认为当前没有leader，而leader收到的话就会对消息进行处理，添加数据到自己的log中。并且进行bcastAppend。</p>
-<p>另外，如果propose的是配置更改的数据，那么leader还会做一些配置更改的相关操作，这个等到配置更改的时候再深入。</p>
-<p>MsgProp是由上层或者其他follower发送给leader的。</p>
-<h4 id="MsgApp"><a href="#MsgApp" class="headerlink" title="MsgApp"></a>MsgApp</h4><table>
-<thead>
-<tr>
-<th>使用的参数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>From</td>
-<td>表示信息发送者</td>
-</tr>
-<tr>
-<td>to</td>
-<td>信息要发送的目的id</td>
-</tr>
-<tr>
-<td>Index</td>
-<td>preLogInde</td>
-</tr>
-<tr>
-<td>LogTerm</td>
-<td>preLogTerm</td>
-</tr>
-<tr>
-<td>commit</td>
-<td>Leadercommit</td>
-</tr>
-<tr>
-<td>Entries</td>
-<td>要append的数据</td>
-</tr>
-</tbody></table>
-<p>MsgApp消息只会由leader发送给其他server。用来append entries。leader会维护每个server的next，并且更具server在leader眼中的状态来发送MsgApp。</p>
-<p>MsgApp的处理在raft中是非常重要的，是log replicate的重要组成部分，另一部分是snapshot的发送。</p>
-<p>不同状态收到MsgApp的处理并不相同，下面分别进行介绍</p>
-<h5 id="leader-处理MsgApp"><a href="#leader-处理MsgApp" class="headerlink" title="leader 处理MsgApp"></a>leader 处理MsgApp</h5><p>直接丢掉，哈哈哈，是这样的吧，因为etcd raft里面不像raft论文中heart 和 append Entry是共用一个处理，在这个raft实现中会根据消息中类型标签进行处理，那么一个leader不可能收到MsgApp，收到了也不处理。</p>
-<h5 id="candidate-处理MsgApp"><a href="#candidate-处理MsgApp" class="headerlink" title="candidate 处理MsgApp"></a>candidate 处理MsgApp</h5><ul>
-<li>1.首先变成follower状态,</li>
-</ul>
-<blockquote>
-<p> 这里和之后在stepCandidate，以及stepFollower，stepLeader中不提到关于term的判断是因为在调用这三个函数以前，在Step中的一开始就对message.term和current term进行了判断和处理，所以之后的这三个不同状态的step就不需要考虑term了。</p>
-</blockquote>
-<ul>
-<li>2.调用handleAppendentries 我发现这个和follower是一样的，只是candidate多了一个状态转变而已</li>
-</ul>
-<h5 id="follower-处理MsgApp"><a href="#follower-处理MsgApp" class="headerlink" title="follower 处理MsgApp"></a>follower 处理MsgApp</h5><ul>
-<li><ol>
-<li>r.electionElapsed &#x3D; 0，r.lead &#x3D; m.From 俩个参数处理，重制选举间隔和leader的设置</li>
-<li>调用handleAppendentries</li>
-</ol>
-</li>
-</ul>
-<h5 id="handleAppendentries-看一下流程"><a href="#handleAppendentries-看一下流程" class="headerlink" title="handleAppendentries 看一下流程"></a>handleAppendentries 看一下流程</h5><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//如果消息中的preLogIndex 要小于当前server的commoited，说明不需要进行append，或者这个leader是旧的</span></span><br><span class="line"><span class="keyword">if</span> m.Index &lt; r.raftLog.committed &#123;</span><br><span class="line">  <span class="comment">//返回现在server的commited的位置 设置到index参数中</span></span><br><span class="line">   r.send(pb.Message&#123;To: m.From, Type: pb.MsgAppResp, Index: r.raftLog.committed&#125;)</span><br><span class="line">   <span class="keyword">return</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果preLogIndex是大于等于commited 那么尝试匹配并且进行append</span></span><br><span class="line"><span class="keyword">if</span> mlastIndex, ok := r.raftLog.maybeAppend(m.Index, m.LogTerm, m.Commit, m.Entries...); ok &#123;</span><br><span class="line">  <span class="comment">//如果匹配成功，那么就把现在最新的log 的index返回</span></span><br><span class="line">   r.send(pb.Message&#123;To: m.From, Type: pb.MsgAppResp, Index: mlastIndex&#125;)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">   r.logger.Debugf(<span class="string">&quot;%x [logterm: %d, index: %d] rejected MsgApp [logterm: %d, index: %d] from %x&quot;</span>,</span><br><span class="line">      r.id, r.raftLog.zeroTermOnErrCompacted(r.raftLog.term(m.Index)), m.Index, m.LogTerm, m.Index, m.From)</span><br><span class="line"></span><br><span class="line">   <span class="comment">// Return a hint to the leader about the maximum index and term that the</span></span><br><span class="line">   <span class="comment">// two logs could be divergent at. Do this by searching through the</span></span><br><span class="line">   <span class="comment">// follower&#x27;s log for the maximum (index, term) pair with a term &lt;= the</span></span><br><span class="line">   <span class="comment">// MsgApp&#x27;s LogTerm and an index &lt;= the MsgApp&#x27;s Index. This can help</span></span><br><span class="line">   <span class="comment">// skip all indexes in the follower&#x27;s uncommitted tail with terms</span></span><br><span class="line">   <span class="comment">// greater than the MsgApp&#x27;s LogTerm.</span></span><br><span class="line">   <span class="comment">//</span></span><br><span class="line">   <span class="comment">// See the other caller for findConflictByTerm (in stepLeader) for a much</span></span><br><span class="line">   <span class="comment">// more detailed explanation of this mechanism.</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">//如果匹配失败，那么就要给leader提供一些信息来快速更新next 这里的hintIndex和hintTerm的含义和6.824讲义中的应该是一样的</span></span><br><span class="line">  </span><br><span class="line">   hintIndex := min(m.Index, r.raftLog.lastIndex())</span><br><span class="line">  </span><br><span class="line"><span class="comment">//findConflictByTerm takes an (index, term) pair (indicating a conflicting log</span></span><br><span class="line"><span class="comment">// entry on a leader/follower during an append) and finds the largest index in</span></span><br><span class="line"><span class="comment">// log l with a term &lt;= `term` and an index &lt;= `index`. If no such index exists</span></span><br><span class="line"><span class="comment">// in the log, the log&#x27;s first index is returned.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// The index provided MUST be equal to or less than l.lastIndex(). Invalid</span></span><br><span class="line"><span class="comment">// inputs log a warning and the input index is returned.</span></span><br><span class="line">   hintIndex = r.raftLog.findConflictByTerm(hintIndex, m.LogTerm)</span><br><span class="line">  <span class="comment">//hintIndex是计算后得到的一个位置 hintTerm是冲突的log的term</span></span><br><span class="line">   hintTerm, err := r.raftLog.term(hintIndex)</span><br><span class="line">   <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">      <span class="built_in">panic</span>(fmt.Sprintf(<span class="string">&quot;term(%d) must be valid, but got %v&quot;</span>, hintIndex, err))</span><br><span class="line">   &#125;</span><br><span class="line">  <span class="comment">//发送MsgAppResp返回给leader</span></span><br><span class="line">   r.send(pb.Message&#123;</span><br><span class="line">      To:         m.From,</span><br><span class="line">      Type:       pb.MsgAppResp,</span><br><span class="line">      Index:      m.Index,</span><br><span class="line">      Reject:     <span class="literal">true</span>,</span><br><span class="line">      RejectHint: hintIndex,</span><br><span class="line">      LogTerm:    hintTerm,</span><br><span class="line">   &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="MsgAppResp"><a href="#MsgAppResp" class="headerlink" title="MsgAppResp"></a>MsgAppResp</h4><table>
-<thead>
-<tr>
-<th>使用的参数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>From</td>
-<td>表示信息发送者</td>
-</tr>
-<tr>
-<td>to</td>
-<td>信息要发送的目的id</td>
-</tr>
-<tr>
-<td>Index</td>
-<td>这个应该是server在处理完append 以后得到的，现在可以确定的和leader匹配的最大Index</td>
-</tr>
-<tr>
-<td>Reject</td>
-<td>append是否被拒绝，只有不匹配会有拒绝</td>
-</tr>
-<tr>
-<td>RejectHint</td>
-<td>hintIndex 返回去更新next 具体含义就看上面代码的注释</td>
-</tr>
-<tr>
-<td>LogTerm</td>
-<td>hintTerm 对应于hintIndex的term</td>
-</tr>
-</tbody></table>
-<p>这个MsgAppResp在不同的处理结果下的返回值不同。现在来看一下怎么处理MsgAppResp，这个只有leader需要处理，直接来看stepLeader，这注释有点多，耐心读一读吧</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> pb.MsgAppResp:</span><br><span class="line">   pr.RecentActive = <span class="literal">true</span> <span class="comment">//说明这个server 最近是活跃的不是unreachable</span></span><br><span class="line"></span><br><span class="line">   <span class="keyword">if</span> m.Reject &#123;  <span class="comment">//如果 reject==true 说明是发生了不匹配，那么follower会返回hintindex和hingtterm</span></span><br><span class="line">      r.logger.Debugf(<span class="string">&quot;%x received MsgAppResp(rejected, hint: (index %d, term %d)) from %x for index %d&quot;</span>,</span><br><span class="line">         r.id, m.RejectHint, m.LogTerm, m.From, m.Index)</span><br><span class="line">     </span><br><span class="line">      nextProbeIdx := m.RejectHint <span class="comment">//这里直接用传回来的RejectHint来更新 next</span></span><br><span class="line">      <span class="keyword">if</span> m.LogTerm &gt; <span class="number">0</span> &#123;</span><br><span class="line">        <span class="comment">//使用这个返回的confilct term从leader自己的log中找到这个term的第一个log的index</span></span><br><span class="line">         nextProbeIdx = r.raftLog.findConflictByTerm(m.RejectHint, m.LogTerm)</span><br><span class="line">      &#125;</span><br><span class="line">     </span><br><span class="line">      <span class="keyword">if</span> pr.MaybeDecrTo(m.Index, nextProbeIdx) &#123; <span class="comment">//这是使用上面得到的nextProbeIdx和之前被拒绝的m.index来更新next。如果没有成功更新就不做处理</span></span><br><span class="line">         r.logger.Debugf(<span class="string">&quot;%x decreased progress of %x to [%s]&quot;</span>, r.id, m.From, pr)</span><br><span class="line">         <span class="keyword">if</span> pr.State == tracker.StateReplicate &#123;</span><br><span class="line">            pr.BecomeProbe()</span><br><span class="line">         &#125;</span><br><span class="line">         r.sendAppend(m.From)</span><br><span class="line">      &#125;</span><br><span class="line">   &#125; <span class="keyword">else</span> &#123;<span class="comment">//这里是匹配成功的处理或者是 m.index&lt;server.commited</span></span><br><span class="line">     </span><br><span class="line">      oldPaused := pr.IsPaused() <span class="comment">//这个返回的是标志之前是否出现过因为leadertransfer等事件的append 暂停</span></span><br><span class="line">      <span class="keyword">if</span> pr.MaybeUpdate(m.Index) &#123;<span class="comment">//这个MaybeUpdate是看能不能更新match和next，现在m.index是server返回的匹配到的log中的最大的index。如果不能更新match和next 那就不做处理了</span></span><br><span class="line">         <span class="keyword">switch</span> &#123; <span class="comment">//先来看下这个server的状态</span></span><br><span class="line">         <span class="keyword">case</span> pr.State == tracker.StateProbe: <span class="comment">//如果是探测状态说明现在匹配成功了，转换到replicate状态</span></span><br><span class="line">            pr.BecomeReplicate()</span><br><span class="line">         <span class="keyword">case</span> pr.State == tracker.StateSnapshot &amp;&amp; pr.Match &gt;= pr.PendingSnapshot:</span><br><span class="line">            <span class="comment">// TODO(tbg): we should also enter this branch if a snapshot is</span></span><br><span class="line">            <span class="comment">// received that is below pr.PendingSnapshot but which makes it</span></span><br><span class="line">            <span class="comment">// possible to use the log again.</span></span><br><span class="line">            r.logger.Debugf(<span class="string">&quot;%x recovered from needing snapshot, resumed sending replication messages to %x [%s]&quot;</span>, r.id, m.From, pr)</span><br><span class="line">            <span class="comment">// Transition back to replicating state via probing state</span></span><br><span class="line">            <span class="comment">// (which takes the snapshot into account). If we didn&#x27;t</span></span><br><span class="line">            <span class="comment">// move to replicating state, that would only happen with</span></span><br><span class="line">            <span class="comment">// the next round of appends (but there may not be a next</span></span><br><span class="line">            <span class="comment">// round for a while, exposing an inconsistent RaftStatus).</span></span><br><span class="line">            pr.BecomeProbe()</span><br><span class="line">            pr.BecomeReplicate()</span><br><span class="line">         <span class="keyword">case</span> pr.State == tracker.StateReplicate:<span class="comment">//如果是replicate的，那么就可以释放一些空间？</span></span><br><span class="line">            pr.Inflights.FreeLE(m.Index)</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">         <span class="keyword">if</span> r.maybeCommit() &#123; <span class="comment">//判断是否可以提交</span></span><br><span class="line">            <span class="comment">// committed index has progressed for the term, so it is safe</span></span><br><span class="line">            <span class="comment">// to respond to pending read index requests</span></span><br><span class="line">            releasePendingReadIndexMessages(r) <span class="comment">//有提交的话可以更新readindex</span></span><br><span class="line">            r.bcastAppend()<span class="comment">//提交成功的话还要广播append</span></span><br><span class="line">         &#125; <span class="keyword">else</span> <span class="keyword">if</span> oldPaused &#123; </span><br><span class="line">            <span class="comment">// If we were paused before, this node may be missing the</span></span><br><span class="line">            <span class="comment">// latest commit index, so send it.</span></span><br><span class="line">            r.sendAppend(m.From) <span class="comment">//如果之前被暂停过，那么有可能还有log没有apppend，虽然没有commit也要append</span></span><br><span class="line">         &#125;</span><br><span class="line">         <span class="comment">// We&#x27;ve updated flow control information above, which may</span></span><br><span class="line">         <span class="comment">// allow us to send multiple (size-limited) in-flight messages</span></span><br><span class="line">         <span class="comment">// at once (such as when transitioning from probe to</span></span><br><span class="line">         <span class="comment">// replicate, or when freeTo() covers multiple messages). If</span></span><br><span class="line">         <span class="comment">// we have more entries to send, send as many messages as we</span></span><br><span class="line">         <span class="comment">// can (without sending empty messages for the commit index)</span></span><br><span class="line">         <span class="keyword">for</span> r.maybeSendAppend(m.From, <span class="literal">false</span>) &#123;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="comment">// Transfer leadership is in progress.</span></span><br><span class="line">         <span class="keyword">if</span> m.From == r.leadTransferee &amp;&amp; pr.Match == r.raftLog.lastIndex() &#123;</span><br><span class="line">            r.logger.Infof(<span class="string">&quot;%x sent MsgTimeoutNow to %x after received MsgAppResp&quot;</span>, r.id, m.From)</span><br><span class="line">            r.sendTimeoutNow(m.From)</span><br><span class="line">         &#125;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-
-<p>这个MsgAppresp的处理很麻烦啊，细节非常多，还得再多看几遍。</p>
-<figure class="highlight v"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">之后可以在这里用伪代码简述一下流程</span><br></pre></td></tr></table></figure>
-
-<h4 id="MsgVote-MsgPreVote-MsgVoteResp-MsgPreVoteResp"><a href="#MsgVote-MsgPreVote-MsgVoteResp-MsgPreVoteResp" class="headerlink" title="MsgVote,MsgPreVote,MsgVoteResp,MsgPreVoteResp"></a>MsgVote,MsgPreVote,MsgVoteResp,MsgPreVoteResp</h4><p>这四个关于选举和预选举投票的几种消息。这些消息都在Step中进行处理，其他类型的消息在Step的最后会分发。</p>
-<p>这应该是因为投票选举对于每一个raft status都是基本一样的流程。</p>
-<table>
-<thead>
-<tr>
-<th>MsgVote MsgPreVote使用的参数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Term</td>
-<td>发送者的当前term</td>
-</tr>
-<tr>
-<td>from</td>
-<td>发送者id</td>
-</tr>
-<tr>
-<td>to</td>
-<td>接收者id</td>
-</tr>
-<tr>
-<td>Index</td>
-<td>candidate 最后一个log的index，用来和follower对比</td>
-</tr>
-<tr>
-<td>LogTerm</td>
-<td>candidate 最后一个log的term，用来和follower对比</td>
-</tr>
-<tr>
-<td>Context</td>
-<td>这个是上下文参数，我不是很了解</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th>MsgVoteResp MsgPreVoteResp使用的参数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Term</td>
-<td>返回当前的term</td>
-</tr>
-<tr>
-<td>from</td>
-<td>发送者id</td>
-</tr>
-<tr>
-<td>to</td>
-<td>接受者id</td>
-</tr>
-<tr>
-<td>reject</td>
-<td>是否拒绝投票</td>
-</tr>
-</tbody></table>
-<p>这几个消息的处理就是leader election的流程，到后再深入，现在只细致看一下代码结构。</p>
-<h4 id="MsgHeartbeat"><a href="#MsgHeartbeat" class="headerlink" title="MsgHeartbeat"></a>MsgHeartbeat</h4><p>这是leader用来向其他的follower，candidate发送心跳的消息</p>
-<table>
-<thead>
-<tr>
-<th>MsgHeartbeat使用的参数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>term</td>
-<td>leader当前的term</td>
-</tr>
-<tr>
-<td>from</td>
-<td>leader id</td>
-</tr>
-<tr>
-<td>to</td>
-<td>接收者id</td>
-</tr>
-<tr>
-<td>Commit</td>
-<td>leadercommit</td>
-</tr>
-<tr>
-<td>Context</td>
-<td>上下文变量，保存一致性读相关的数据</td>
-</tr>
-</tbody></table>
-<p>这个消息的处理比较简单，follower和candidate都需要处理，如果是有效的心跳，那么就先become follower。</p>
-<p>然后在handleHeartBeat里面，是先看一下能不能更新自己的commit。然后返回MsgHeartbeat Resp消息。</p>
-<h4 id="MsgHeartbeatResp"><a href="#MsgHeartbeatResp" class="headerlink" title="MsgHeartbeatResp"></a>MsgHeartbeatResp</h4><table>
-<thead>
-<tr>
-<th>MsgHeartbeatResp使用的参数</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>term</td>
-<td>follower当前的term</td>
-</tr>
-<tr>
-<td>from</td>
-<td>follower id</td>
-</tr>
-<tr>
-<td>to</td>
-<td>接收leader id</td>
-</tr>
-<tr>
-<td>Context</td>
-<td>上下文变量，保存一致性读相关的数据</td>
-</tr>
-</tbody></table>
-<p>这个消息只有leader需要处理，在stepleader中进行，有一些关于readonly的我现在还不是很清楚。得再学习一下</p>
-<h4 id="MsgUnreachable"><a href="#MsgUnreachable" class="headerlink" title="MsgUnreachable"></a>MsgUnreachable</h4><p>这个是一个本地消息，上层告诉leader，目的id是不可达的，下面是doc中的一些描述。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x27;MsgUnreachable&#x27; tells that request(message) wasn&#x27;t delivered. When</span><br><span class="line">&#x27;MsgUnreachable&#x27; is passed to leader&#x27;s Step method, the leader discovers</span><br><span class="line">that the follower that sent this &#x27;MsgUnreachable&#x27; is not reachable, often</span><br><span class="line">indicating &#x27;MsgApp&#x27; is lost. When follower&#x27;s progress state is replicate,</span><br><span class="line">the leader sets it back to probe.</span><br></pre></td></tr></table></figure>
-
-<h4 id="MsgSnap"><a href="#MsgSnap" class="headerlink" title="MsgSnap"></a>MsgSnap</h4><p>leader用MsgSnap来向follower发送快照，在log repliacate时，如果leader发现一个要给follower发的log的信息已经被自己压缩了，那么就找不到log信息了，此时就需要发送snapshot来让follower和自己保持同步。</p>
-<table>
-<thead>
-<tr>
-<th align="left">成员</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">to</td>
-<td>消息接收者的节点ID</td>
-</tr>
-<tr>
-<td align="left">from</td>
-<td>节点ID</td>
-</tr>
-<tr>
-<td align="left">snap</td>
-<td>要发送的snap数据</td>
-</tr>
-</tbody></table>
-<h4 id="MsgSnapStatus"><a href="#MsgSnapStatus" class="headerlink" title="MsgSnapStatus"></a>MsgSnapStatus</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#x27;MsgSnapStatus&#x27; tells the result of snapshot install message. When a</span><br><span class="line">follower rejected &#x27;MsgSnap&#x27;, it indicates the snapshot request with</span><br><span class="line">&#x27;MsgSnap&#x27; had failed from network issues which causes the network layer</span><br><span class="line">to fail to send out snapshots to its followers. Then leader considers</span><br><span class="line">follower&#x27;s progress as probe. When &#x27;MsgSnap&#x27; were not rejected, it</span><br><span class="line">indicates that the snapshot succeeded and the leader sets follower&#x27;s</span><br><span class="line">progress to probe and resumes its log replication.</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="left">成员</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">to</td>
-<td>消息接收者的节点ID</td>
-</tr>
-<tr>
-<td align="left">from</td>
-<td>节点ID</td>
-</tr>
-<tr>
-<td align="left">reject</td>
-<td>是否拒绝</td>
-</tr>
-</tbody></table>
-<p>这个消息是用来向leader返回snapshot的结果的，如果follower接收成功，就把它的状态设置为probe，如果接受失败那么也会把它的状态设置为probe，但是snapshot没有提交。这可能是因为网络原因，之后应该会继续尝试snap。</p>
-<h4 id="MsgCheckQuorum"><a href="#MsgCheckQuorum" class="headerlink" title="MsgCheckQuorum"></a>MsgCheckQuorum</h4><h4 id="MsgTransferLeader"><a href="#MsgTransferLeader" class="headerlink" title="MsgTransferLeader"></a>MsgTransferLeader</h4><h4 id="MsgTimeoutNow"><a href="#MsgTimeoutNow" class="headerlink" title="MsgTimeoutNow"></a>MsgTimeoutNow</h4><h4 id="MsgReadIndex"><a href="#MsgReadIndex" class="headerlink" title="MsgReadIndex"></a>MsgReadIndex</h4><h4 id="MsgReadIndexResp"><a href="#MsgReadIndexResp" class="headerlink" title="MsgReadIndexResp"></a>MsgReadIndexResp</h4><h3 id="raftlog-1"><a href="#raftlog-1" class="headerlink" title="raftlog"></a>raftlog</h3><p>raftlog是用来对raft的日志进行管理的结构。</p>
-<p>f2  </p>
-<p>c1   </p>
-<p>L1  </p>
-
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
       
     </div>
+  </div>
+</div>
 
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
     
     
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/06/06/raft%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" target="_self">
+          raft源码阅读
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/06/06/raft%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" target="_self">
+        <div>
+          etcd raft源码阅读[TOC]  先梳理一下整体的包结构 主目录代码中有多个package，每个主要的raft的逻辑实现在raft package中，其他的package主要是为raft提供支持，例如选举，状态追踪，还有原型photo buffer的定义等等。 然后梳理一下上层应用层和底层raft的一些调用关系 底层raft使用Node接口为上层提供了可以调用的方法，其他的实现细节都隐藏，应
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-06 17:10" pubdate>
+              2022-06-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
+      <span class="category-chain">
+        
+  <a href="/categories/etcd/" class="category-chain-item">etcd</a>
   
   
 
-
+      </span>
+    
   
-
-
+</span>
 
           </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/raft/">#raft</a>
+            
+          </div>
+        
+      </div>
+    </article>
   </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="IoCing"
-      src="/images/head.jpeg">
-  <p class="site-author-name" itemprop="name">IoCing</p>
-  <div class="site-description" itemprop="description">和赖赖快乐开心每一天🌼</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-  </nav>
-</div>
 
 
 
-      </div>
-        <div class="back-to-top motion-element">
-          <i class="fa fa-arrow-up"></i>
-          <span>0%</span>
+
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    
 
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">IoCing</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
-    </span>
-    <span title="Symbols count total">17k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="Reading time total">15 mins.</span>
+  </div>
 </div>
 
-<!--
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>-->
+    
 
-        
+    
+  </main>
 
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
+  <footer>
+    <div class="footer-inner">
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
   
-
-
-
-
   
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="statistics">
+  
   
 
   
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
 
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
