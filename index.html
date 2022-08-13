@@ -223,6 +223,46 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2022/08/13/levelDB-Read/" target="_self">
+          levelDB-Read
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/08/13/levelDB-Read/" target="_self">
+        <div>
+          levelDB-read到这里就要看一下读的流程了，虽然好像读是比较简单的，但是在levelDB中，读操作Get。 首先要在memtable中查找，然后要在immemtable中查找。如果内存中没有的话就需要在分层管理的SSTable中进行搜索了。 我认为比较巧妙的是，levelDB设计了很多中iterator，所有的搜索都可以使用这些iterator进行，让代码逻辑变得非常清晰，也很优雅。希望自
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-13 23:55" pubdate>
+              2022-08-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/levelDB/">#levelDB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2022/08/13/levelDB-Write/" target="_self">
           levelDB-Write
         </a>
