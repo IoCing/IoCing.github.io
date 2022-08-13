@@ -223,6 +223,46 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2022/08/13/levelDB-Write/" target="_self">
+          levelDB-Write
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/08/13/levelDB-Write/" target="_self">
+        <div>
+          levelDB-writelevelDB中的写操作分为两种，Put和Delete。 但是其实处理是一样的，Put是插入key和value，delete是插入key和删除标记。因为levelDB是分层遍历的，所以在读到删除标记的时候就可以返回。不过levelDB也提供了Snapshot，可以设置读到某个节点之前的数据。 levelDB中write是通过write_batch实现的。write_bat
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-13 16:25" pubdate>
+              2022-08-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/levelDB/">#levelDB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2022/08/13/levelDB-Arena/" target="_self">
           levelDB-Arena
         </a>
