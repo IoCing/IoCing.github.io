@@ -18,8 +18,8 @@
   
     <meta name="description" content="和赖赖快乐开心每一天🌼">
 <meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://example.com/tags/index.html">
+<meta property="og:title" content="IoCing">
+<meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="IoCing">
 <meta property="og:description" content="和赖赖快乐开心每一天🌼">
 <meta property="og:locale" content="zh_CN">
@@ -28,7 +28,7 @@
   
   
   
-  <title>标签 - IoCing</title>
+  <title>IoCing</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -80,7 +80,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 80vh;">
+<div class="header-inner" style="height: 100vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -185,7 +185,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="标签"></span>
+            <span id="subtitle" data-typed-text="这是一个安静的博客"></span>
           
         </div>
 
@@ -209,16 +209,257 @@
     
       <div class="container nopadding-x-md">
         <div id="board"
-          >
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="text-center tagcloud">
-  <a href="/tags/levelDB/" style="font-size: 15px; color: #bbe">levelDB</a>
-</div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/08/13/levelDB-Arena/" target="_self">
+          levelDB-Arena
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/08/13/levelDB-Arena/" target="_self">
+        <div>
+          levelDB-Arena 内存管理在levelDB中自己实现了对内存的管理，主要功能是申请内存中的块，在析构函数中会将所有申请到的块进行删除，这样可以防止内存泄漏。 Arena默认的内存块大小为4KB，如果超出了1KB就按照bytes所需要的大小来进行分配。 Arena的代码实现逻辑比较简单，可以很快的看懂。Arena内部有四个成员变量 12345678char* alloc_ptr_; &#x2F;&#x2F;当
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-13 14:59" pubdate>
+              2022-08-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/levelDB/">#levelDB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/08/13/levelDB-Log/" target="_self">
+          levelDB-Log
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/08/13/levelDB-Log/" target="_self">
+        <div>
+          levelDB-LoglevelDB中的log用来存放写操作的日志，向log中写日志试用log空间中的writer，在leveldb中有不止一个writer，需要进行区分。先来研究一下log_writer的操作，之后在整体db_impl实现中在看一下log的具体的使用逻辑。 关于log的操作还有一个log_reader是用来从log文件中读取记录，这个是在recover的时候会用到，在重新启动一个
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-13 14:58" pubdate>
+              2022-08-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/levelDB/">#levelDB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/08/13/levelDB-MemTable/" target="_self">
+          levelDB-MemTable
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/08/13/levelDB-MemTable/" target="_self">
+        <div>
+          levelDB-Memtable and ImmemtableMemtable下面来看一下Memtable的实现和使用流程。 Memtable的内部是一个Skiplist的实现和一个内存管理Arena的部分。  – 关于key的编码之后仔细在总结一下吧，现在先不关注  Memtable使用引用计数，如果一个Memtable没有被引用了就将自己delete 1234567891011&#x2F;&#x2F; Incre
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-13 14:58" pubdate>
+              2022-08-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/levelDB/">#levelDB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/08/13/levelDB-Compaction/" target="_self">
+          levelDB-Compaction
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/08/13/levelDB-Compaction/" target="_self">
+        <div>
+          levelDB-Compaction看了一些博客，也看了一些代码，在levelDB中将Compact的处理分为两种，分别是Memtable Compaction和SStable Compaction。下面就介绍一下两种compaction的流程和具体实现。个人能力有限，可能会有一些有误的地方。 Memtable CompactionlevelDB中的写数据都是直接写到memtable中，在memt
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-13 14:58" pubdate>
+              2022-08-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/levelDB/">#levelDB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/08/13/levelDB-SSTable/" target="_self">
+          levelDB-SSTable
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/08/13/levelDB-SSTable/" target="_self">
+        <div>
+          levelDB-SSTablesstable是在磁盘的组织文件，每一个level可能有多个sstable，这些table的信息都会存放到version里面，再查找的时候就去当前version名为current里面去查找对应的信息。 下面来研究一下table的组织结构吧，再个catkong大佬的图画的怎么很好啊。再借用一下。  （图片来源:庖丁解LevelDB之数据存储) 首先一个table是由fo
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-13 14:55" pubdate>
+              2022-08-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/levelDB/">#levelDB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/08/13/levelDB%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" target="_self">
+          levelDB源码阅读
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/08/13/levelDB%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" target="_self">
+        <div>
+          levelDB 源码阅读很久没有写文档了，之前利用hexo+github搞了这个自己的博客，但是一直都没写什么东西，最近在levelDB的代码，我觉得应该写点什么记录一下。我的笔记中可能有错误，我写的东西口语化比较严重，我的表达能力还有待提高。但是写一些笔记主要还是一种记录吧，希望自己能学到更多的东西，如果我写的文档有人觉得有用就更好了，我自己在学习的时候也看了很多其他人写的文档。 关于level
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-08-13 14:40" pubdate>
+              2022-08-13
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/levelDB/">#levelDB</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
 
               </div>
             </div>
