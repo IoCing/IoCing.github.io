@@ -11,6 +11,7 @@
 <li>1.<a href="http://catkang.github.io/2017/01/17/leveldb-data.html">catKang</a></li>
 <li>2.<a href="https://youjiali1995.github.io/">我叫尤加利</a></li>
 </ul>
+<p>Source Code：<a href="https://github.com/google/leveldb">https://github.com/google/leveldb</a></p>
 ]]></content>
       <tags>
         <tag>levelDB</tag>
@@ -401,6 +402,41 @@
 ]]></content>
       <tags>
         <tag>levelDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>roseDB源码阅读</title>
+    <url>/2022/08/15/roseDB%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/</url>
+    <content><![CDATA[<h1 id="RoseDB源码阅读"><a href="#RoseDB源码阅读" class="headerlink" title="RoseDB源码阅读"></a>RoseDB源码阅读</h1><p>最近接触了roseDB这个项目，还提交了几百行代码，虽然是比较简单的，加几个redis协议的命令。不过也算是迈出第一步，，，</p>
+<p>好好读了一下roseDB的代码，对这个简单的单机存储引擎有了更多的理解。</p>
+<p>roseDB是基于bitcask的，关于这个存储架构是在一篇论文中提出的，真的比较简单。在网上看了一篇文章就搞懂了，简单来说就是一张在内存中的hash表+磁盘中的log文件。感觉和lsm有一些相似，但是也不太一样。</p>
+<ul>
+<li><p>lsm没有在内存中设置hash表，对memtable的搜索是需要遍历的。bitcask在读操作时，先查找hash表获取到entry的位置，然后直接去读指定file的指定offset就可以了。</p>
+</li>
+<li><p>在写操作的时候，bitcask直接写到当前接受append的logfile，然后把元数据存入hash表中，bitcask中是直接写入到磁盘的。如果当前的logfile文件草过了阈值，就把它转化为只读的logfile，然后新创建一个logfile以供写入操作。这个和lsm的memtable到immemtable的转化是一样的。只不过bitcask是在磁盘中，而lsm是在内存中转化，之后immemtable的内容还需要写入到磁盘中。</p>
+</li>
+<li><p>bitcask还有一个过程是进行回收，需要将danglogfile中的所有数据读取一遍，然后将无效的数据删除。在遍历的时候可以生成hint file，可以加快载入bitcask的速度，roseDB中没有实现hint file。</p>
+</li>
+</ul>
+<p>感觉整体的思路就是这样，之后要介绍一下roseDB的代码实现。</p>
+<p><img src="https://iocing-image.oss-cn-shenzhen.aliyuncs.com/img/design-overview-rosedb.png" alt="design-overview-rosedb"></p>
+<p>（图片来源：<a href="https://github.com/flower-corp/rosedb/blob/main/resource/img/design-overview-rosedb.png">roseDB</a>)</p>
+<p>可以看到，上图就展示了roseDB的读写过程，和前面描述的bitcask的读写流程是一样的。</p>
+<p>roseDB的一个特性是，它支持redis的协议（虽然目前还不完全支持）但是在roseDB中，对list，set，hash，zset等数据结构的存储是独立的。每一种类型都有自己的logfile和index，这样可以看做每一种数据结构是一个独立的bitcask。回收操作也是一样，会根据datatype进行区分，当然某一中类型的回收只需要取遍历当前类型的logfile就可以了。</p>
+<p>roseDB实现了SSI（序列化快照隔离），我看代码感觉应该是通过在读写时加锁实现的，这样每个读写操作就是可序列化的了。</p>
+<p>roseDB的回收过程在后台的discard进程中实现，每次有需要删除的entry时，会通过channel来传递node的信息。这部分代码还有一点没有看懂的地方，可以再看一下。而且roseDB也会有一个ticker来控制，每隔一段时间就执行一次后台的gc，查看需不需要进行rewirte。</p>
+<p>总的来说roseDB的架构比较易懂，而且代码写的也比较简洁。比起levelDB。rocksDB，目前支持的功能目前还不是很多。之后还可以继续增加新的feature。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><p><a href="https://github.com/flower-corp/rosedb">roseDB源码</a></p>
+</li>
+<li><p><a href="https://www.51cto.com/article/697752.html">存储架构｜Bitcask 引擎的设计，秒！</a></p>
+</li>
+<li><p><a href="https://riak.com/assets/bitcask-intro.pdf">Bitcask A Log-Structured Hash Table for Fast Key&#x2F;Value Data</a></p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>roseDB bitcask</tag>
       </tags>
   </entry>
 </search>
